@@ -1,0 +1,15 @@
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/telebot.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/telebot_static.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/edit_cache.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/rebuild_cache.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/list_install_components.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/install.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/install/local.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/CMakeFiles/install/strip.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/test/CMakeFiles/echobot.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/test/CMakeFiles/edit_cache.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/test/CMakeFiles/rebuild_cache.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/test/CMakeFiles/list_install_components.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/test/CMakeFiles/install.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/test/CMakeFiles/install/local.dir
+/home/vahram/workplace/Task/weather_bot_project/telebot/test/CMakeFiles/install/strip.dir
