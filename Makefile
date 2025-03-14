@@ -4,6 +4,9 @@ export RUST_WEATHER_INCLUDE = ./rust_weather/include
 export TELEBOT_LIB = ./telebot/lib
 export RUST_WEATHER_LIB = ./rust_weather/target/release
 
+# Use the current directory path for the required libraries
+LIB_PATHS := $(shell pwd)/telebot/lib:$(shell pwd)/rust_weather/target/release
+
 # Compiler and linker settings
 CC = gcc
 CFLAGS = -Wall -std=c99 -I$(TELEBOT_INCLUDE) -I$(RUST_WEATHER_INCLUDE)
@@ -32,3 +35,11 @@ clean:
 
 # Rebuild the project
 rebuild: clean all
+
+# Run the executable with the correct LD_LIBRARY_PATH (generic)
+run: $(EXEC)
+	@echo "LD_LIBRARY_PATH is: $(LIB_PATHS)"  # Prints the LD_LIBRARY_PATH for debugging
+	LD_LIBRARY_PATH=$(LIB_PATHS) ./$(EXEC)
+
+
+
