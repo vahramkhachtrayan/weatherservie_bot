@@ -1,7 +1,13 @@
+# Setting environment variables directly in the Makefile
+export TELEBOT_INCLUDE = ./telebot/include
+export RUST_WEATHER_INCLUDE = ./rust_weather/include
+export TELEBOT_LIB = ./telebot/lib
+export RUST_WEATHER_LIB = ./rust_weather/target/release
+
 # Compiler and linker settings
 CC = gcc
-CFLAGS = -Wall -std=c99 -I./telebot/include -I./rust_weather/include
-LDFLAGS = -L./telebot/lib -L$(HOME)/workplace/WeatherService/rust_weather/target/release
+CFLAGS = -Wall -std=c99 -I$(TELEBOT_INCLUDE) -I$(RUST_WEATHER_INCLUDE)
+LDFLAGS = -L$(TELEBOT_LIB) -L$(RUST_WEATHER_LIB)
 LDLIBS = -ltelebot -lweather -lapr-1 -lcurl -pthread
 
 # Source files and output
@@ -15,8 +21,6 @@ all: $(EXEC)
 # Linking the executable
 $(EXEC): $(OBJS)
 	$(CC) $(OBJS) $(LDFLAGS) $(LDLIBS) -o $(EXEC)
-	
-
 
 # Compilation rules
 %.o: %.c
@@ -28,4 +32,3 @@ clean:
 
 # Rebuild the project
 rebuild: clean all
-
