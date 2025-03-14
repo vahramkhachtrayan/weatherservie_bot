@@ -3,6 +3,7 @@ export TELEBOT_INCLUDE = ./telebot/include
 export RUST_WEATHER_INCLUDE = ./rust_weather/include
 export TELEBOT_LIB = ./telebot/lib
 export RUST_WEATHER_LIB = ./rust_weather/target/release
+export LD_LIBRARY_PATH=$(pwd)/telebot/lib:$(pwd)/rust_weather/target/release
 
 # Use the current directory path for the required libraries
 LIB_PATHS := $(shell pwd)/telebot/lib:$(shell pwd)/rust_weather/target/release
